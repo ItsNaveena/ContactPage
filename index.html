@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Contact Me</title>
+    <link rel="icon" type="image/x-icon" href="/survey-2316468_640.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <div class="container">
+
+    <form action="/home.html" target="_blank">
+      
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contactName" onkeyup="validateName()">
+        <span id="nameError"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="1234567890" id="contactPhone" onkeyup="validatePhone()">
+        <span id="phoneError"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contactEmail" onkeyup="validateEmail()">
+        <span id="emailError"></span>
+      </div>   
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" id="contactMessage" onkeyup="validateMessage()" ></textarea>
+        <span id="messageError"></span>
+      </div>
+
+    <button onclick="return validateForm()">Submit</button>
+    <span id="submitError"></span>
+   
+  </form>
+
+  </div>
+   
+  <script defer src="/script.js"></script>
+
+</body>
+</html>
