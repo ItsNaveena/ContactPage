@@ -34,11 +34,22 @@
 .input-group label{
     width: 28%;
 }
-.input-group input, .input-group textarea{
+.input-group input {
     width: 68%;
     background: transparent;
     border: 0;
     border-bottom: 1px solid #999;
+    padding: 10px 0;
+    color: rgb(51, 8, 8);
+    font-size: 16px;
+}
+
+.input-group textarea{
+    width: 68%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #999;
+    margin-top: 20px;
     padding: 10px 0;
     color: rgb(51, 8, 8);
     font-size: 16px;
@@ -71,6 +82,7 @@ form button:hover{
     
 }
 
+
 #submitError{
     color: red;
     margin: auto;
@@ -78,3 +90,23 @@ form button:hover{
     align-items: center;
     justify-content: center;
 }
+
+.contactEmail{
+    
+    position: relative;
+}
+
+.emailCaption{
+    font-size: 11px;
+  width: 350px;
+  
+  color: rgb(97, 91, 91);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  margin-top: 15%;
+  left: 50%;
+  margin-left: -110px;
+}
+ 
