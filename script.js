@@ -45,7 +45,8 @@ function validatePhone(){
 
     }
 
-    if(!phone.match(/[0-9]*/)){
+
+    if(!phone.match(/[0-9]{9}/)){
         phoneError.innerHTML = 'Invalid Phone number';
         return false;
 
